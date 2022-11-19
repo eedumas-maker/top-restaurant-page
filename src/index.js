@@ -25,6 +25,8 @@ const navigation = (() => {
 
         const buttonRow = document.querySelector('#buttonRow');
 
+        buttonRow.classList.add('header');
+        
         buttonRow.appendChild(contactButton);
         buttonRow.appendChild(aboutButton);
         buttonRow.appendChild(menuButton);

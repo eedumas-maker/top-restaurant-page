@@ -1,3 +1,5 @@
+import './style.css';
+
 export default function menu() {
     console.log("it's the menu page");
 
@@ -5,6 +7,7 @@ export default function menu() {
     const headerText = document.createElement('h1');
     const menuText = document.createElement('div');
 
+    header.classList.add('header');
     headerText.textContent = "Menu";
     menuText.textContent = "coffee, pancakes, breakfast foods galore";
 

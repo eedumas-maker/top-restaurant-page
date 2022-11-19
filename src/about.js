@@ -1,4 +1,5 @@
 import nighthawks from './nighthawks.jpg'
+import './style.css';
 
 export default function about() {
     console.log('this is the about page');
@@ -12,6 +13,7 @@ export default function about() {
     const diner = new Image();
     diner.src = nighthawks;
 
+    header.classList.add('header');
     headerText.textContent = "The Late Night";
 
     const dinerCaption = document.createElement('figcaption');
