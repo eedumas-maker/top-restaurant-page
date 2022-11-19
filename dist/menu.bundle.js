@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ menu)\n/* harmony export */ });\nfunction menu() {\n    console.log(\"it's the menu page\");\n}\n\n//# sourceURL=webpack://top-restaurant-page/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ menu)\n/* harmony export */ });\nfunction menu() {\n    console.log(\"it's the menu page\");\n\n    const header = document.createElement('div');\n    const headerText = document.createElement('h1');\n    const menuText = document.createElement('div');\n\n    headerText.textContent = \"Menu\";\n    menuText.textContent = \"coffee, pancakes, breakfast foods galore\";\n\n    container.appendChild(header);\n\n    header.appendChild(headerText);\n    header.appendChild(menuText);\n}\n\n//# sourceURL=webpack://top-restaurant-page/./src/menu.js?");
 
 /***/ })
 

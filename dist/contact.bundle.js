@@ -16,7 +16,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact() {\n    console.log(\"it's the contact page\");\n}\n\n//# sourceURL=webpack://top-restaurant-page/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact() {\n    console.log(\"it's the contact page\");\n    \n    const header = document.createElement('div');\n    const headerText = document.createElement('h1');\n    const contactText = document.createElement('div');\n\n    headerText.textContent = \"Contact Us\";\n    contactText.textContent = \"A phone number, email, and that's about it\";\n\n    container.appendChild(header);\n\n    header.appendChild(headerText);\n    header.appendChild(contactText);\n\n}\n\n//# sourceURL=webpack://top-restaurant-page/./src/contact.js?");
 
 /***/ })
 

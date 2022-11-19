@@ -6,20 +6,20 @@ export default function about() {
     const container = document.querySelector('#container');
 
 
-const header = document.createElement('div');
-const headerText = document.createElement('h1');
+    const header = document.createElement('div');
+    const headerText = document.createElement('h1');
 
-const diner = new Image();
-diner.src = nighthawks;
+    const diner = new Image();
+    diner.src = nighthawks;
 
-headerText.textContent = "The Late Night";
+    headerText.textContent = "The Late Night";
 
-const dinerCaption = document.createElement('figcaption');
-dinerCaption.textContent = "Nighthawks by Edward Hopper, 1947"
+    const dinerCaption = document.createElement('figcaption');
+    dinerCaption.textContent = "Nighthawks by Edward Hopper, 1947"
 
-container.appendChild(header);
+    container.appendChild(header);
 
-header.appendChild(headerText);
-header.appendChild(diner);
-header.appendChild(dinerCaption);
+    header.appendChild(headerText);
+    header.appendChild(diner);
+    header.appendChild(dinerCaption);
 }
