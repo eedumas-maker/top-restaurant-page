@@ -1,0 +1,6 @@
+.header {
+    width: 100vh;
+    height: 50px;
+    object-fit: contain;
+    border: 1px solid red;
+}
