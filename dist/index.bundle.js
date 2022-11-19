@@ -116,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ about)\n/* harmony export */ });\nfunction about() {\n    console.log('this is the about page');\n}\n\n//# sourceURL=webpack://top-restaurant-page/./src/about.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ about)\n/* harmony export */ });\n/* harmony import */ var _nighthawks_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nighthawks.jpg */ \"./src/nighthawks.jpg\");\n\n\nfunction about() {\n    console.log('this is the about page');\n\n    const container = document.querySelector('#container');\n\n\nconst header = document.createElement('div');\nconst headerText = document.createElement('h1');\n\nconst diner = new Image();\ndiner.src = _nighthawks_jpg__WEBPACK_IMPORTED_MODULE_0__;\n\nheaderText.textContent = \"The Late Night\";\n\nconst dinerCaption = document.createElement('figcaption');\ndinerCaption.textContent = \"Nighthawks by Edward Hopper, 1947\"\n\ncontainer.appendChild(header);\n\nheader.appendChild(headerText);\nheader.appendChild(diner);\nheader.appendChild(dinerCaption);\n}\n\n\n//# sourceURL=webpack://top-restaurant-page/./src/about.js?");
+
+/***/ }),
+
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact() {\n    console.log(\"it's the contact page\");\n}\n\n//# sourceURL=webpack://top-restaurant-page/./src/contact.js?");
 
 /***/ }),
 
@@ -126,7 +136,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n/* harmony import */ var _nighthawks_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nighthawks.jpg */ \"./src/nighthawks.jpg\");\n\n\n\n\n(0,_about__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(); // gotta properly say it's a function yeah.\n\n// lets put a header with the name of the place\n// lets put in an image\n\n// let's call the diner the late night\nconst container = document.querySelector('#container');\n\n\nconst header = document.createElement('div');\nconst headerText = document.createElement('h1');\n\nconst diner = new Image();\ndiner.src = _nighthawks_jpg__WEBPACK_IMPORTED_MODULE_2__;\n\nheaderText.textContent = \"The Late Night\";\n\nconst dinerCaption = document.createElement('figcaption');\ndinerCaption.textContent = \"Nighthawks by Edward Hopper, 1947\"\n\ncontainer.appendChild(header);\n\nheader.appendChild(headerText);\nheader.appendChild(diner);\nheader.appendChild(dinerCaption);\n\n\n\n//# sourceURL=webpack://top-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _about_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.js */ \"./src/about.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n\n\n\n\n\n(0,_about_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(); // gotta properly say it's a function yeah.\n\n// lets put a header with the name of the place\n// lets put in an image\n\n// let's call the diner the late night\n\n\nconst contactButton = document.createElement('button');\nconst aboutButton = document.createElement('button');\nconst menuButton = document.createElement('button');\n\ncontactButton.setAttribute('id', 'contact');\naboutButton.setAttribute('id', 'about');\nmenuButton.setAttribute('id', 'menu');\n\ncontactButton.textContent = 'Contact';\naboutButton.textContent = 'About';\nmenuButton.textContent = 'Menu';\n\nconst container = document.querySelector('#container');\n\ncontainer.appendChild(contactButton);\ncontainer.appendChild(aboutButton);\ncontainer.appendChild(menuButton);\n\ndocument.addEventListener('click', function (event) {\n\n    if (event.target.matches('#about')){ \n        (0,_about_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n    };\n    if (event.target.matches('#contact')){ \n    (0,_contact_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n    };\n    if (event.target.matches('#menu')){ \n    (0,_menu_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    };\n// of course this will just fill the page over and over\n\n}, false);\n\n//# sourceURL=webpack://top-restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ menu)\n/* harmony export */ });\nfunction menu() {\n    console.log(\"it's the menu page\");\n}\n\n//# sourceURL=webpack://top-restaurant-page/./src/menu.js?");
 
 /***/ }),
 
