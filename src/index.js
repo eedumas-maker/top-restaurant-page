@@ -3,14 +3,31 @@ import about from './about.js';
 import contact from './contact.js';
 import menu from './menu.js';
 
+
+// New goal, have a consistent header and button row (all within index.js)
+// have photo on left, and have buttons change content of what's on right
+
 const navigation = (() => {
 
+    const container = document.querySelector('#container');
+
     const clearPage = () => {
-        const container = document.querySelector('#container');
+         //have it only clean the little container on the right
         removeChildren(container);
     }
 
-    const initializePage = () => {
+    const addHeader = () => {
+        
+        const header = document.createElement('div');
+        const headerText = document.createElement('h1');
+
+        header.classList.add('header');
+        headerText.textContent = "The Late Night";
+        container.appendChild(header);
+
+    }
+
+    const addButtonRow = () => {
         const contactButton = document.createElement('button');
         const aboutButton = document.createElement('button');
         const menuButton = document.createElement('button');
@@ -23,13 +40,14 @@ const navigation = (() => {
         aboutButton.textContent = 'About';
         menuButton.textContent = 'Menu';
 
-        const buttonRow = document.querySelector('#buttonRow');
-
+        const buttonRow = document.createElement('div');
         buttonRow.classList.add('header');
         
         buttonRow.appendChild(contactButton);
         buttonRow.appendChild(aboutButton);
         buttonRow.appendChild(menuButton);
+        
+        
         
         about(); // run initial about page.
     }
@@ -42,10 +60,12 @@ const navigation = (() => {
 
     return {
         clearPage,
-        initializePage
+        initializePage,
+        addHeader
     }
 })();
 
+navigation.addHeader();
 navigation.initializePage();
 
 
